@@ -1,0 +1,12 @@
+onEvent("logitudBarradeslisante", "change", function( ) {
+  for (var z = 1; z < getNumber("logitudBarradeslisante"); z++) {
+    penUp();
+    moveTo(155, 250);
+    penDown();
+    penRGB(randomNumber(0, 255), randomNumber(0, 255), randomNumber(0, 255));
+    penWidth(1);
+    moveForward(z);
+    turnRight(1);
+    hide();
+  }
+});
